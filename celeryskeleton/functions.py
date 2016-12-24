@@ -6,10 +6,18 @@ app = Celery('tasks')
 app.conf.broker_url = 'redis://localhost:6379/0'
 app.conf.result_backend = 'redis://localhost:6379/0'
 
+
 @app.task
 def adding(x, y):
     time.sleep(random.randint(1,3))
     return x + y
+
+
+@app.task
+def blergh(n):
+    time.sleep(n)
+    return n
+
 
 @app.task
 def multiplying(x, y):
