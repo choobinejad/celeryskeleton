@@ -2,7 +2,7 @@ from distutils.core import setup
 
 setup(
     name='celeryskeleton',
-    version='0.04',
+    version='0.05',
     packages=['celeryskeleton'],
     url='',
     license='',
