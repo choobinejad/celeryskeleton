@@ -4,7 +4,4 @@ FROM python:onbuild
 CMD ["python"]
 
 
-ADD run.py
-
-
 CMD [ "python", "./celeryskeleton/run.py" }
